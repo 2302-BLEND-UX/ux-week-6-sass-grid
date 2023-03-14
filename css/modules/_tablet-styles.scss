@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) {
+    #simple-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+    }
+
+    #product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}

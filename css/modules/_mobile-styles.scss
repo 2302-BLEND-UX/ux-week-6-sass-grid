@@ -1,0 +1,43 @@
+body {
+    font-family: "Karla", sans-serif;
+    padding: 40px;
+}
+
+h1 {
+    letter-spacing: -7px;
+    font-size: 80px;
+    margin-bottom: $med-spacing;
+}
+
+h2 {
+    margin-bottom: $small-spacing;
+}
+
+.container {
+    margin-bottom: $med-spacing;
+}
+
+.item {
+    background-color: $orange;
+    color: white;
+    padding: 10px;
+    border: 1px dashed white;
+}
+
+// product grid
+
+#product-grid {
+    .item {
+        text-align: center;
+        padding: 0;
+        margin-bottom: $small-spacing;
+
+        h3 {
+            padding: $small-spacing;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
