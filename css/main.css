@@ -43,6 +43,31 @@ h2 {
   width: 100%;
 }
 
+#spotify-grid {
+  background: #292929;
+  color: white;
+  display: grid;
+  grid-template-areas: "title" "songs" "sidebar" "controls";
+}
+#spotify-grid .template {
+  border: 1px dashed white;
+}
+#spotify-grid #sidebar {
+  grid-area: sidebar;
+}
+#spotify-grid #title {
+  grid-area: title;
+  background-image: url("https://variety.com/wp-content/uploads/2022/11/snoop.jpg?w=681&h=383&crop=1");
+  background-size: cover;
+  padding: 80px;
+}
+#spotify-grid #songs {
+  grid-area: songs;
+}
+#spotify-grid #controls {
+  grid-area: controls;
+}
+
 @media screen and (min-width: 768px) {
   #simple-grid {
     display: grid;
@@ -52,5 +77,13 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+  #spotify-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "sidebar title title" "sidebar songs songs" "controls controls controls";
+  }
+  #spotify-grid #controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
