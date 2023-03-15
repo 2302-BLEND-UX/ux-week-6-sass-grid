@@ -41,3 +41,39 @@ h2 {
         }
     }
 }
+
+// spotify layout
+
+#spotify-grid {
+    background: #292929;
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "songs"
+        "sidebar"
+        "controls";
+
+    .template {
+        border: 1px dashed white;
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+    }
+
+    #title {
+        grid-area: title;
+        background-image: url("https://variety.com/wp-content/uploads/2022/11/snoop.jpg?w=681&h=383&crop=1");
+        background-size: cover;
+        padding: 80px;
+    }
+
+    #songs {
+        grid-area: songs;
+    }
+
+    #controls {
+        grid-area: controls;
+    }
+}

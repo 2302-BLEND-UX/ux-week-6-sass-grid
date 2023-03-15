@@ -9,4 +9,19 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
+
+    #spotify-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "sidebar title title"
+            "sidebar songs songs"
+            "controls controls controls";
+
+        #controls {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    //  end of media query   
 }
